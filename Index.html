@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0b0b12;
+      color: white;
+    }
+
+    nav {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #8b5cf6;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+      background: radial-gradient(circle, #33206b, #0b0b12 60%);
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      font-size: 20px;
+      color: #bbbbc8;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #8b5cf6;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7c3aed;
+    }
+
+    #message {
+      display: none;
+      margin-top: 25px;
+      color: #22d3ee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Nexora</div>
+
+    <div>
+      <a href="#accueil">Accueil</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+
+      <h1>Nexora</h1>
+
+      <p>
+        Bienvenue sur mon site !
+        Un espace moderne créé avec passion.
+      </p>
+
+      <button onclick="bonjour()">
+        Découvrir
+      </button>
+
+      <div id="message">
+        🚀 Bienvenue sur Nexora !
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function bonjour() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+  </html>
